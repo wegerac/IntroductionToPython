@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# DONE: 2.
 #
 #  You should have RUN the PREVIOUS module and READ its code.
 #  (Do so now if you have not already done so.)
@@ -71,7 +71,9 @@ for k in range(5):
     andy.forward(40)
     andy.right(90)
     andy.pen_down()
+
 andy.draw_circle(20)
+
 for k in range(4):
     andy.pen_up()
     andy.right(180)
@@ -79,5 +81,127 @@ for k in range(4):
     andy.left(180)
     andy.pen_down()
     andy.draw_circle(20)
+
+rosie.pen_up()
+rosie.right(90)
+rosie.forward(20)
+rosie.left(90)
+rosie.pen_down()
+rosie.pen = rg.Pen('orange', 5)
+for k in range(5):
+    rosie.draw_circle(20)
+    rosie.pen_up()
+    rosie.left(90)
+    rosie.forward(40)
+    rosie.right(90)
+    rosie.pen_down()
+
+rosie.draw_circle(20)
+
+for k in range(4):
+    rosie.pen_up()
+    rosie.right(180)
+    rosie.forward(40)
+    rosie.left(180)
+    rosie.pen_down()
+    rosie.draw_circle(20)
+
+cortana.pen_up()
+cortana.right(90)
+cortana.forward(20)
+cortana.left(90)
+cortana.pen_down()
+cortana.pen = rg.Pen('blue', 5)
+for k in range(5):
+    cortana.draw_circle(20)
+    cortana.pen_up()
+    cortana.left(90)
+    cortana.forward(40)
+    cortana.right(90)
+    cortana.pen_down()
+
+cortana.draw_circle(20)
+
+for k in range(4):
+    cortana.pen_up()
+    cortana.right(180)
+    cortana.forward(40)
+    cortana.left(180)
+    cortana.pen_down()
+    cortana.draw_circle(20)
+
+siri.pen_up()
+siri.right(90)
+siri.forward(20)
+siri.left(90)
+siri.pen_down()
+siri.pen = rg.Pen('green', 5)
+for k in range(5):
+    siri.draw_circle(20)
+    siri.pen_up()
+    siri.left(90)
+    siri.forward(40)
+    siri.right(90)
+    siri.pen_down()
+
+siri.draw_circle(20)
+
+for k in range(4):
+    siri.pen_up()
+    siri.right(180)
+    siri.forward(40)
+    siri.left(180)
+    siri.pen_down()
+    siri.draw_circle(20)
+
+boxy = rg.SimpleTurtle('turtle')
+boxy.left(90)
+boxy.speed = 10
+boxy.pen_up()
+boxy.forward(220)
+boxy.left(90)
+boxy.pen_down()
+boxy.pen = rg.Pen('red', 5)
+boxy.forward(220)
+boxy.left(90)
+boxy.forward(220)
+boxy.pen = rg.Pen('blue', 5)
+boxy.forward(220)
+boxy.left(90)
+boxy.forward(220)
+boxy.pen = rg.Pen('orange', 5)
+boxy.forward(220)
+boxy.left(90)
+boxy.forward(220)
+boxy.pen = rg.Pen('green', 5)
+boxy.forward(220)
+boxy.left(90)
+boxy.forward(220)
+boxy.pen_up()
+boxy.left(90)
+boxy.forward(220)
+boxy.right(180)
+boxy.pen_down()
+boxy.pen = rg.Pen('red', 5)
+boxy.left(45)
+boxy.forward(308)
+boxy.left(180)
+boxy.forward(308)
+boxy.pen = rg.Pen('blue', 5)
+boxy.right(90)
+boxy.forward(308)
+boxy.right(180)
+boxy.forward(308)
+boxy.right(90)
+boxy.pen = rg.Pen('orange', 5)
+boxy.forward(308)
+boxy.left(180)
+boxy.forward(308)
+boxy.pen = rg.Pen('green', 5)
+boxy.right(90)
+boxy.forward(308)
+boxy.left(180)
+boxy.forward(308)
+boxy.right(135)
 
 window.close_on_mouse_click()
